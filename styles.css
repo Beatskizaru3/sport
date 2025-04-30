@@ -512,7 +512,7 @@ select.input:invalid{
   display: flex;
   flex-direction: column;
   justify-content: end;
-  min-height: calc(70vw - var(--header-height));
+  min-height: calc(45vw - var(--header-height));
   padding: 36px 70px;
   color: var(--color-light-gray);
   background-color: var(--color-dark-alternate);
@@ -1026,7 +1026,7 @@ select.input:invalid{
   right: 0;
   height: 100%;
   aspect-ratio: 1;
-  background-color: url('./icons/arrow-thick.svg') center/70% no-repeat;
+  background: url('./icons/arrow-thick.svg') center/70% no-repeat;
   border: var(--border);
   border-radius: 50%;
 }
@@ -1039,15 +1039,40 @@ select.input:invalid{
   text-align: left;
 }
 
-.footer-soc1als-list{
+.footer-soc1als {
   display: flex;
-  column-gap: 18px;
+  justify-content: center;
+  padding: 20px;
 }
 
-.footer-soc1ials-link{
+.footer-soc1als-list {
   display: flex;
-  width: 23px;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+.footer-soc1als-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-soc1als-link {
+  color: var(--color-light-gray) /* Задайте желаемый цвет для линий */
+}
+.footer-soc1als-link svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  transition: color 0.3s ease;
+}
+
+.footer-soc1als-link:hover {
+  color: #00b7ff; /* Цвет линий при наведении */
+}
+
 
 .footer-extra{
   padding-block: 15px;
